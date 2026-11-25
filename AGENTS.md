@@ -7,3 +7,5 @@
 - 목적, 분석 단위, 변수, 기간, 결측·중복·환불 정책, 모형 가정을 확인. 가정이 불명확하면 질문. 상관관계와 인과관계를 구분. 표본 수, 효과크기, 신뢰구간, 표준오차 방법, 한계, 재현 방법 기록.
 - 실행하지 않은 결과를 성공했다고 하지 말 것. 변경 후 가상 데이터 테스트. 변경 파일과 미검증 사항 요약.
 - .agents/skills/econometrics/SKILL.md, parquet/SKILL.md, validation/SKILL.md를 필요에 따라 읽는다.
+
+- 초보자 환경 점검은 beginner-workflow, Git 변경 검토는 git-safety Skill을 사용한다. 외부 Skills 설치와 사용은 docs/skills.md를 안내하고 승인 전 자동 실행하지 않는다.

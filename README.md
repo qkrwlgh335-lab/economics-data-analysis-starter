@@ -51,13 +51,13 @@ py -3.12 -m venv .venv
 [Git 초보 가이드](docs/git.md)를 참고하세요. 실제 분석은 스타터와 분리된 로컬 작업 공간에서 수행하고, 코드 변경 이력만 저장하세요. 원본·파생 데이터·노트북 출력·비밀정보는 commit/push하지 않습니다. .gitignore는 보안 장치가 아닙니다.
 
 ## 6. AI 작업 방식
-AGENTS.md(Codex), CLAUDE.md(Claude Code)와 .agents/skills, .claude/skills에 분석용 지침이 있습니다. Skills는 모델 학습이 아니라 업무 매뉴얼입니다. 자동 적용 여부는 도구 버전 및 설정에 따라 달라지므로 첫 요청에서 직접 읽으라고 지정하세요. 외부 Skills 설치는 필수가 아닙니다.
+AGENTS.md(Codex), CLAUDE.md(Claude Code)와 .agents/skills, .claude/skills에 분석용 지침이 있습니다. Skills는 모델 학습이 아니라 업무 매뉴얼입니다. 자동 적용 여부는 도구 버전 및 설정에 따라 달라지므로 첫 요청에서 직접 읽으라고 지정하세요. 외부 Skills 설치는 필수가 아닙니다. **[Superpowers · Grill Me · Ponytail 설치 및 사용법](docs/skills.md)** 을 참고하세요. 기본 제공 Skills 5종(parquet, econometrics, validation, beginner-workflow, git-safety)은 별도 설치 없이 프로젝트에 포함되어 있습니다.
 
 ## 추가 문서
 - [환경 설정](docs/setup.md)
 - [데이터 보안](docs/security.md)
 - [Git](docs/git.md)
 - [경제학 분석 절차](docs/analysis.md)
-- [외부 Skills 검토 기준](docs/skills.md)
+- [Skills 설치 및 실전 사용법](docs/skills.md)
 
 가상 데이터 예제는 학습용입니다. 실제 경제적 결론이나 인과효과를 나타내지 않습니다.

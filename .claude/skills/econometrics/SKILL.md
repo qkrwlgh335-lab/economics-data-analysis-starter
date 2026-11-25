@@ -1,6 +1,23 @@
 ---
 name: econometrics
-description: Choose and validate econometric models, interpret estimates and limitations.
+description: Design econometric analyses, select regression/panel/time-series/causal methods, check assumptions and interpret estimates.
 ---
-# 계량경제학
-연구 질문, 분석 단위, 변수, 기간, 식별 전략을 먼저 확인한다. OLS, 패널, 시계열, DiD, IV의 적합성을 비교하되 필요한 경우에만 사용한다. 강건/군집/HAC 표준오차의 선택 근거를 설명한다. 계수 단위, 신뢰구간, 표본수, 가정 및 한계를 기록한다. 인과효과를 무근거 단정하지 않는다. docs/analysis.md를 참고한다.
+# econometrics
+
+## 시작 조건
+회귀·패널·시계열·인과 분석 요청. docs/security.md와 docs/analysis.md 우선.
+## 연구 설계
+사용자에게 한 번에 필요한 질문 하나씩: 연구 질문, Y/X, 단위, 기간, 통제변수, 인과/예측/기술 목적. 선택 근거를 설명하고 승인받는다.
+## 모형 선택
+- OLS: 연속형 결과와 조건부 평균 관계. 잔차, 함수 형태, 이상치, 다중공선성 점검. 이분산이면 HC 계열 고려.
+- 패널: 단위/시간 효과, 관측 구조, 군집 상관 검토. FE/RE 선택은 가정 및 연구 질문 기반.
+- 시계열: 계절성, 추세, 정상성, 자기상관 검토. 시간 순서 보존. HAC 또는 적절한 동학 모형 고려.
+- DiD: 처치 시점, 비교집단, 평행추세, 사전효과 및 이질적 효과 고려.
+- IV: 관련성, 배제 제한, 외생성, 약한 도구 문제를 검토. 검정만으로 타당성 확정 금지.
+## 실행
+전처리 및 분석 표본을 고정하고 제외 이유를 기록한다. statsmodels/linearmodels 등 기존 패키지를 우선 사용한다. 실제 데이터는 승인된 환경에서만 실행.
+가상 회귀 예제: examples/demo.py를 실행하고 tests/test_demo.py를 검증한다. HC3 표준오차와 계수 단위, 신뢰구간을 설명한다.
+## 해석 예시
+기온 1도 증가와 거래액 100원 증가가 관련된다면 다른 변수 고정 조건의 추정 연관성이다. 인과 식별 전략이 없다면 기온 때문에 증가했다고 단정하지 않는다.
+## 완료 기준
+모형식, 표본 수, 계수, 표준오차 유형, 95% 신뢰구간, p값, 단위, 제외 기준, 가정, 대안 사양, 재현 명령, 한계. 다중 검정·선택 편향 및 경제적 유의성도 검토. 실행하지 않은 값은 제시하지 않는다.
