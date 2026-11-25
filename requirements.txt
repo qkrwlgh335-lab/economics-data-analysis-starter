@@ -1,0 +1,8 @@
+duckdb>=1.2,<3
+pandas>=2.2,<4
+numpy>=1.26,<3
+scipy>=1.13,<2
+statsmodels>=0.14,<1
+linearmodels>=6,<8
+matplotlib>=3.8,<4
+jupyterlab>=4,<5
