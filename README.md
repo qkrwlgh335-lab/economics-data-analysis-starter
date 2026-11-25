@@ -53,6 +53,10 @@ py -3.12 -m venv .venv
 ## 6. AI 작업 방식
 AGENTS.md(Codex), CLAUDE.md(Claude Code)와 .agents/skills, .claude/skills에 분석용 지침이 있습니다. Skills는 모델 학습이 아니라 업무 매뉴얼입니다. 자동 적용 여부는 도구 버전 및 설정에 따라 달라지므로 첫 요청에서 직접 읽으라고 지정하세요. 외부 Skills 설치는 필수가 아닙니다. **[Superpowers · Grill Me · Ponytail 설치 및 사용법](docs/skills.md)** 을 참고하세요. 기본 제공 Skills 5종(parquet, econometrics, validation, beginner-workflow, git-safety)은 별도 설치 없이 프로젝트에 포함되어 있습니다.
 
+## 외부 전문 통계 분석 Skills
+
+**[실제 공개 통계·계량경제학 Skills 다운로드 및 설치 방법](docs/statistics-skills.md)** — K-Dense Statistical Analysis, Statsmodels, DuckDB, Anthropic, EconAgentSkills 및 Econometrics Skill 원본 링크와 선택 설치 방법. 자체 제작 Skills와 구분하며 처음에는 K-Dense 2종만 검토한다.
+
 ## 추가 문서
 - [환경 설정](docs/setup.md)
 - [데이터 보안](docs/security.md)
