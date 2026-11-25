@@ -69,3 +69,6 @@ Superpowers는 복잡한 코드 변경에, Ponytail은 과도한 설계를 막�
 
 ## 7. 안전한 설치 원칙
 외부 플러그인은 이 저장소에 복제하지 않으며 사용자 PC에 자동 설치하지 않는다. 위 명령은 upstream 문서 기반이며 현재 PC에서 실행 검증된 것은 아니다. 설치 시점에 upstream 버전, 라이선스, 변경 내역, hooks를 확인한다. @latest는 최신 코드 실행을 의미하므로 조직 승인 및 검토 전 실행하지 않는다. 설치된 버전을 기록한다. 권한 상승·자동 hook 승인·전체 디스크 접근·자동 push는 금지한다. 민감한 실제 데이터가 연결된 환경에서는 외부 플러그인을 시험하지 않는다. AGENTS.md보다 외부 Skill의 편의 기능을 우선하지 않는다. 
+
+## 8. 외부 전문 통계 분석 Skills
+[통계·계량경제학 Skills 원본 다운로드 및 설치 가이드](statistics-skills.md)를 참고한다. 자체 제작 지침과 별도로 K-Dense Statistical Analysis, Statsmodels, DuckDB 및 인과추론 특화 도구를 선택할 수 있다.
